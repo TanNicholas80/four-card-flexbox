@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --top: hsl(0, 78%, 62%);
+  --topleft: hsl(180, 62%, 55%);
+  --topbottom: hsl(34, 97%, 64%);
+  --topright: hsl(212, 86%, 64%);
+  --bg: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+body {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+header {
+  text-align: center;
+  margin: 50px;
+}
+header h1 {
+  font-weight: 200;
+}
+header h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+header p {
+  padding: 0 400px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supervisor {
+  border-top: 5px solid var(--topleft);
+  padding: 30px;
+  flex-basis: 300px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 30px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.column {
+  flex-basis: 350px;
+  margin: 30px;
+}
+.team {
+  border-top: 5px solid var(--top);
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.karma {
+  border-top: 5px solid var(--topbottom);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.calculator {
+  border-top: 5px solid var(--topright);
+  flex-basis: 300px;
+  background-color: white;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+p {
+  color: gray;
+  margin: 10px 0 50px;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.2rem;
+}
+.image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+  header {
+    margin: 50px 30px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header p {
+    padding: 0;
+  }
+  .column {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  p {
+    padding: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .calculator {
+    flex-basis: 195px;
+  }
+  .supervisor {
+    flex-basis: 195px;
+  }
+}
